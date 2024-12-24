@@ -75,6 +75,8 @@ nav {
     background-color: rgb(var(--color_12)); /* Background color */
     text-align: center;
     padding: 0 20px;
+    margin-bottom: 0;
+    background: none;
 }
 
 .hero-content {
@@ -109,6 +111,7 @@ nav {
 /* CTA container for the button */
 .cta {
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .blue-square {
@@ -138,47 +141,7 @@ nav {
     background-color: rgb(var(--color_42)); /* Darker sky blue on hover */
 }
 
-/* Page container for the image slider */
-.page-container {
-    position: relative;
-    width: 80%;
-    margin: 50px auto;
-    overflow: hidden;
-}
 
-.pages {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Ensuring a fixed aspect ratio for the image containers */
-.page {
-    width: 100%;  /* Full container width */
-    height: 100%; /* Full container height */
-    object-fit: cover; /* Crop and maintain aspect ratio */
-    object-position: bottom right; /* Crop from bottom-right */
-}
-
-/* Optional: Button styling for navigation */
-.next-btn, .prev-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.next-btn {
-    right: 10px;
-}
-
-.prev-btn {
-    left: 10px;
-}
 
 /* Customize Section */
 .customize-section {
@@ -744,3 +707,25 @@ nav {
     margin: 0;
 }
 
+
+.hero{
+    z-index: 0;
+    position: sticky;
+    top: 0;
+}
+.hero{
+    z-index: -1;
+    position: sticky;
+    top: 0;
+}
+.slidez {
+    position: sticky;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slidez img{
+top: 0;
+width: 100%;
+}
